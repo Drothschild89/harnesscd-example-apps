@@ -1,7 +1,7 @@
 image:
   tag: 0.1
   repository: "corelab/ks-guestbook-demo"
-  pullPolicy: "Always"
+  pullPolicy: "IfNotPresent"
 ingress:
   path: "/"
   hosts:
@@ -9,7 +9,7 @@ ingress:
   annotations: {}
   tls: []
   enabled: false
-replicaCount: 3
+replicaCount: 4
 tolerations: []
 service:
   port: 80
